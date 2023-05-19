@@ -1,0 +1,104 @@
+public class University {
+
+
+     protected static String university_name="Daffodil International University";
+      protected static String address="Daffodil International University";
+
+}
+public class Department extends University {
+
+      private String faculty_name;
+      private String department;
+
+
+    public void setFaculty(String faculty_name){
+
+          this.faculty_name=faculty_name;
+
+    }
+
+
+     public String getFaculty(){
+
+           return faculty_name;
+     }
+
+     public void setDepartment(String department){
+
+          this.department=department;
+     }
+
+     public String getDepartment(){
+
+          return department;
+     }
+
+
+
+
+
+
+}
+
+public class Student extends Department{
+
+
+    private String student_name;
+
+    private String id;
+
+    private double cgpa;
+
+
+    public void setStudent_name(String student_name){
+
+            this.student_name=student_name;
+    }
+    public String getStudent_name(){
+
+          return student_name;
+    }
+
+    public void setId(String id){
+
+        this.id=id;
+
+    }
+    public String getId(){
+
+        return id;
+
+    }
+    public void setCgpa(double cgpa){
+
+        this.cgpa=cgpa;
+    }
+    public double getCgpa(){
+
+       return cgpa;
+    }
+    public void display(){
+
+        System.out.println("University Name:"+university_name);
+        System.out.println("University Address:"+address);
+        System.out.println("Faculty:"+getFaculty());
+        System.out.println("Department:"+getDepartment());
+        System.out.println("Student Name:"+getStudent_name());
+        System.out.println("Student CGPA:"+getCgpa());
+        System.out.println("Student ID:"+getId());
+    }
+public class Main {
+    public static void main(String[] args) {
+
+    Student s=new Student();
+    s.setFaculty("FSIT");
+    s.setDepartment("SWE");
+    s.setStudent_name("Esraq Humayun");
+    s.setCgpa(3.75);
+    s.setId("14-26552-2");
+    s.display();
+
+
+
+    }
+}

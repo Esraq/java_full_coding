@@ -1,0 +1,66 @@
+public class University {
+
+
+     protected static String university_name="Daffodil International University";
+      protected static String address="Birulia Savar";
+
+}
+public class SWE extends University {
+
+
+     private int total_students;
+     private int total_credits;
+
+
+     SWE(int total_students,int total_credits){
+
+        this.total_students=total_students;
+        this.total_credits=total_credits;
+
+     }
+
+     public void display(){
+
+          System.out.println("University Name:"+university_name);
+          System.out.println("Address:"+address);
+          System.out.println("Total Students:"+total_students);
+          System.out.println("Total Credits:"+total_credits);
+     }
+
+}
+public class CSE extends University {
+
+    private int total_students;
+    private int total_credits;
+
+
+    CSE(int total_students,int total_credits){
+
+        this.total_students=total_students;
+        this.total_credits=total_credits;
+
+    }
+
+    public void display(){
+
+        System.out.println("University Name:"+university_name);
+        System.out.println("Address:"+address);
+        System.out.println("Total Students:"+total_students);
+        System.out.println("Total Credits:"+total_credits);
+    }
+
+}
+public class Main {
+    public static void main(String[] args) {
+
+    SWE s=new SWE(2221,142);
+    s.display();
+
+    CSE c=new CSE(1000,148);
+    c.display();
+
+
+
+
+    }
+}
