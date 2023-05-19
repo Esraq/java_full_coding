@@ -1,0 +1,39 @@
+public class Calculation {
+
+    public void addition(int a,int b,int c){
+
+
+
+        System.out.println("First Method:"+a*b*c);
+
+    }
+    public void addition(int a,int b){
+
+
+
+        System.out.println("Second Method:"+a*b);
+
+    }
+    public void addition(int a,int b,int c,int d){
+
+
+
+        System.out.println("Third Method:"+a*b*c*d);
+
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+    Calculation c=new Calculation();
+    c.addition(5,6);
+    c.addition(6,7,8);
+    c.addition(7,9,2,6);
+
+
+
+
+    }
+}
