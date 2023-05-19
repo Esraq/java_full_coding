@@ -1,0 +1,30 @@
+public interface Introduction {
+
+    public void Hello();
+
+
+
+}
+
+public class Example implements Introduction{
+
+
+    public void Hello(){
+
+
+        System.out.println("It implemts introduction interface");
+    }
+
+
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+     Example a=new Example();
+     a.Hello();
+
+
+    }
+}

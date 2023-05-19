@@ -1,0 +1,26 @@
+public abstract class Bank {
+
+
+    abstract void interest(double amount,double interest_rate);
+}
+
+public class University {
+
+
+     public void Hello(){
+
+         System.out.println("Hello I am from parent class");
+
+     }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+     Account b=new Account();
+     b.interest(5,6);
+
+
+    }
+}
