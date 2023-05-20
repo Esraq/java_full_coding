@@ -4,11 +4,11 @@ public interface Showable {
     
 }
 
-public interface Showable {
+public interface Printable {
 
     public void print();
-    
 }
+
 
 public class Tester implements Printable,Showable{
 
