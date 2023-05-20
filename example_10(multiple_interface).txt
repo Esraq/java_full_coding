@@ -1,24 +1,39 @@
-public interface Printable {
-
-    void print();
-
+public interface Showable {
+    
+    public void print();
+    
 }
 
+public interface Showable {
 
-public interface Printable {
-
-    void print();
-
+    public void print();
+    
 }
 
+public class Tester implements Printable,Showable{
 
+    public void print(){
+
+        System.out.println("Hello I am from print class");
+
+    }
+
+    public void show(){
+
+        System.out.println("Hello I am from show");
+    }
+}
 public class Main {
     public static void main(String[] args) {
 
-     Display a=new Display();
-     a.print();
-     a.show();
+
+        Tester t=new Tester();
+        t.print();
+        t.show();
+
+
 
 
     }
 }
+
