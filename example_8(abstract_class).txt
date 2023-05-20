@@ -4,14 +4,17 @@ public abstract class Bank {
     abstract void interest(double amount,double interest_rate);
 }
 
-public class University {
+public class Account extends Bank{
 
+    public void interest(double amount,double interest_rate){
 
-     public void Hello(){
+        double total;
 
-         System.out.println("Hello I am from parent class");
+        total=amount*interest_rate;
 
-     }
+        System.out.println("Total:"+total);
+
+    }
 
 }
 
